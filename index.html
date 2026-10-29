@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ultramoda — Todos os estilos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="#">ULTRA<span>MODA</span></a>
+  <nav><a href="#catalogo">Catálogo</a><a href="#estilos">Estilos</a><a href="#sobre">Sobre</a></nav>
+  <div class="actions"><button id="profileBtn" class="ghost">Entrar</button><button id="cartBtn" class="cart">🛍 Carrinho <b id="cartCount">0</b></button></div>
+</header>
+
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow">NOVA COLEÇÃO · 2026</p><h1>Vista seu<br><i>universo.</i></h1><p>Moda para todos os estilos, ocasiões e versões de você.</p><a href="#catalogo" class="btn">Explorar catálogo</a></div>
+  <div class="hero-art"><div class="circle"></div><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1100&q=85" alt="Moda"></div>
+</section>
+
+<section id="estilos" class="style-strip"><div><strong>Streetwear</strong><span>Urbano & autêntico</span></div><div><strong>Elegante</strong><span>Clássico & refinado</span></div><div><strong>Minimalista</strong><span>Essencial & clean</span></div><div><strong>Romântico</strong><span>Leve & delicado</span></div><div><strong>Vintage</strong><span>Retrô & atemporal</span></div></section>
+
+<main id="catalogo" class="catalog">
+  <div class="section-head"><div><p class="eyebrow">CURADORIA</p><h2>Encontre seu estilo</h2></div><div class="filters"><input id="search" placeholder="Buscar peça..."><select id="category"><option>Todos</option><option>Casual</option><option>Vestidos</option><option>Camisetas</option><option>Casacos</option><option>Conjuntos</option><option>Moletom</option><option>Saias</option><option>Calças</option></select><select id="style"><option>Todos</option><option>Streetwear</option><option>Elegante</option><option>Minimalista</option><option>Vintage</option><option>Social</option><option>Romântico</option></select></div></div>
+  <div id="products" class="grid"></div>
+</main>
+
+<section id="sobre" class="about"><div><p class="eyebrow">MODA PARA TODOS</p><h2>Do básico ao extraordinário.</h2></div><p>Uma experiência de loja moderna para descobrir roupas de diferentes estilos em um só lugar. Crie sua conta, monte seu carrinho e acompanhe seus pedidos.</p></section>
+
+<footer><div class="logo">MODA<span>VERSO</span></div><p>© 2026 Moda Verso · Projeto demonstrativo</p></footer>
+
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="close">×</button><div id="modalContent"></div></div></div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body></html>
